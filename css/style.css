@@ -96,21 +96,27 @@ a.signIn {
 ***************************************/
 #searchInput {
     margin: 20px auto;
-    width: 35%;
+    width: 37%;
     height: 35px;
     padding: 3px;
-    border: solid 1px #E4E4E4;
-    border-radius: 4px;
+    border: solid 1px #edeff2;
+    border-radius: 2px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
-    -moz-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
-    box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(237,237,237,1);
+    -moz-box-shadow: 0px 1px 0px 1px rgba(237,237,237,1);
+    box-shadow: 0px 1px 0px 1px rgba(237,237,237,1);
 }
 
 #searchInput input {
     border: 0;
     box-shadow: none;
     text-align: center;
+}
+
+#searchInput:hover {
+    -webkit-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
 }
 
 button {
