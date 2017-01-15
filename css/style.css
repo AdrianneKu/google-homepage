@@ -16,7 +16,8 @@ p {
 	margin-top: 0;
 }
 a {
-	font-size: .875em;
+	font-size: .825em;
+    color: #666;
 }
 a:link {
 	color: #666;
@@ -40,15 +41,14 @@ nav {
 }
 nav ul {
 	list-style: none;
-	margin: 0;
+	margin-right: 25px;
     float: right;
 }
 nav li {
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 8px;
 }
 nav li a {
-	padding: 0 5px;
 	height: 40px;
 	line-height: 40px;
 }
@@ -57,6 +57,31 @@ nav li a:hover a:selected {
 	color: #73726d;
 	background-color: #666;
 }
+.signIn {
+    background: #4285f4;
+    border: 1px solid #4285f4;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+a.signIn {
+    color: #fff;
+}
+.appsLink {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/apps.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 85px;
+    top: 29px;
+    padding: 0 35px 0 0px;
+    opacity: .5;
+}
+.appsLink:hover {
+    opacity: 1;
+}
+
 
 /* Content Style
 ***************************************/
@@ -71,12 +96,15 @@ nav li a:hover a:selected {
 ***************************************/
 #searchInput {
     margin: 20px auto;
-    width: 50%;
+    width: 35%;
     height: 35px;
     padding: 3px;
     border: solid 1px #E4E4E4;
     border-radius: 4px;
     background-color: #fff;
+    -webkit-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
 }
 
 #searchInput input {
@@ -86,17 +114,30 @@ nav li a:hover a:selected {
 }
 
 button {
-    background: #eee;
-    color: #666;
+    background: #f2f2f2;
+    min-width: 54px;
+    color: #757575;
     display: inline-block;
-    width: 131px;
     height: 36px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
     font: normal 700 13px/36px "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
     text-align: center;
+    margin: 11px 4px;
+    padding: 0 16px;
     text-shadow: none;
 }
+button:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    -webkit-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+    box-shadow: 0px 5px 9px -6px rgba(184,184,184,1);
+}
 
-/* Footer Contact Style
+/* Footer
 ***************************************/
 footer {
     width: 100%;
@@ -105,6 +146,7 @@ footer {
     border-top: 1px solid #e4e4e4;
     position: absolute;
     background: #f2f2f2;
+    padding-bottom: 15px;
 }
 footer ul {
     list-style: none;
@@ -117,127 +159,10 @@ footer li {
 #ftrL {
     position:absolute;
     left: 0;
+    margin-left: 15px;
 }
 #ftrR {
     position:absolute;
     right: 0;
+    margin-right: 15px;
 }
-label {
-	display: block;
-	margin-top: 2em;
-	margin-bottom: 0.5em;
-	color: #999999;
-}
-.contact-padding {
-	padding-top: 4%;
-}
-
-@media screen and (max-width: 481px) {
-h1 {
-	font-size: .875em;
-	line-height: 1em;
-	text-align: left;
-	padding: 0px 15px;
-}
-h2 {
-	font-size: 1.375em;
-}
-h3 {
-	font-size: 1.25em;;
-}
-p {
-	font-size: 1em;
-	line-height: 1.5em;
-}
-a {	font-size: .875em;
-}
-header {
-	background: url(../images/header_art_mobile.png) no-repeat center;
-	padding-top: 5px;
-	background-color: #33a1e9;
-	max-width: 100%;
-	min-height: 150px;
-	margin: 0 auto;
-	position: relative;
-}
-.nav {
-	width:100%;
-	position: absolute;
-	top: 165px;
-}
-.nav ul {
-	width: 100%;
-	margin-bottom: 10%;
-	float: none;
-	display: inline;
-}
-.nav li {
-	margin: 0;
-	padding: 2px;
-}
-.nav li a {
-	margin: 0 0 0 5px;
-	padding: 0 5px;
-	height: 20px;
-	line-height: 20px;
-}
-.slide_text {
-	max-width: 100%;
-	position: static;
-	padding: .5em;
-}
-.span-2 {
-	max-width: 25%;
-}
-#portfolio {
-	padding-top: 10px;
-	min-height: 200px;
-}
-.formcolumn {
-	width: 85%;
-	float: left;
-}
-}
-
-}
-@media screen and (max-width: 1024px) {
-.slide_text {
-	bottom: -5px;
-	left: 10px;
-	padding: 1em;
-	position: relative;
-	min-width: 60%;
-}
-p {
-	font-size: 1.125em;
-}
-h4 {
-	font-size: .75em;
-}
-}
-@media screen and (max-width: 960px) {
-.span-2 {
-	max-width: 50%;
-}
-label {padding: 5px;}
-}
-input.tabinput {
-	display: none;
-}
-label {
-	display: inline-block;
-	padding: 10px;
-	margin-right: 10px;
-	font-size: 1.25em;
-	text-align: center;
-	border: 1px solid #33a1e9;
-}
-label:hover {
-	color: #33a1e9;
-		cursor: pointer;
-}
-label:checked {
-    color: #6e7072;
-}
-
-   @media screen and (max-width: 400px) { label {padding: 5px;} }
